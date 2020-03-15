@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts "Creating Students"
+5.times do
+Student.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
+end
+puts "Completed creating Students!"
