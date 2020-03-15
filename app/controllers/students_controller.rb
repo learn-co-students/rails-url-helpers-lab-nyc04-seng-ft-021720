@@ -19,17 +19,6 @@ class StudentsController < ApplicationController
     redirect_to "/students/#{@student.id}"
   end
 
-  # def active
-  #   @student = Student.find params[:id]
-  #   if @student.active == false
-  #     @student.update_attribute(:active, true)
-  #   else
-  #     @student.update_attribute(:active, false)
-  #   end
-  #   @student.save
-  #   redirect_to @show
-  # end
-
   private
 
     def set_student
