@@ -1,1 +1,4 @@
 <h1><%= @student.to_s %></h1>
+<li><%= @student.activesentence %>
+<li><%= link_to 'Toggle activation', activate_student_path(@student) %>
+<li><%= link_to 'All Students', students_path %>
